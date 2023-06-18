@@ -19,17 +19,24 @@ section {
   border-radius: 4px;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+
   align-items: center;
   flex-direction: column;
+}
+.logo {
+  margin-top: 27px;
 }
 .group-input {
   font: 14px/24px 'Poppins', sans-serif;
   color: #808080;
   margin-bottom: 16px;
 }
-.down {
+#down {
   margin-bottom: 8px;
+}
+.down {
+  margin-bottom: 24px;
 }
 .input {
   width: 369px;
@@ -44,7 +51,7 @@ a {
   font-weight: 400;
 }
 .link {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 .button {
   display: flex;
@@ -79,7 +86,10 @@ button {
   width: 589px;
   height: 551px;
 }
-.logoCadastro {
-  position: fixed;
-  top: 27px;
+
+.logoCadastro > img {
+  margin: 27px 0px 24px 0px;
+}
+.btnC {
+  margin-bottom: 32px;
 }
