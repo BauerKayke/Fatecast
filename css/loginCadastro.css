@@ -13,8 +13,8 @@ main {
 }
 section {
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.32));
-  width: 589px;
-  height: 328px;
+  width: 43.118594436310396vw;
+  height: 47.194244604316545vh;
   background: #ffffff;
   border-radius: 4px;
 
@@ -25,22 +25,22 @@ section {
   flex-direction: column;
 }
 .logo {
-  margin-top: 27px;
+  margin-top: 3.884892086330935vh;
 }
 .group-input {
   font: 14px/24px 'Poppins', sans-serif;
   color: #808080;
-  margin-bottom: 16px;
+  margin-bottom: 2.302158273381295vh;
 }
 #down {
-  margin-bottom: 8px;
+  margin-bottom: 1.1510791366906474vh;
 }
 .down {
-  margin-bottom: 24px;
+  margin-bottom: 3.4532374100719423vh;
 }
 .input {
-  width: 369px;
-  height: 33px;
+  width: 27.013177159590043vw;
+  height: 4vh;
   border: 1px solid #afb3b1;
   border-radius: 4px;
   padding: 10px;
@@ -51,7 +51,7 @@ a {
   font-weight: 400;
 }
 .link {
-  margin-bottom: 24px;
+  margin-bottom: 3.4532374100719423vh;
 }
 .button {
   display: flex;
@@ -92,4 +92,9 @@ button {
 }
 .btnC {
   margin-bottom: 32px;
+}
+.btnVoltar {
+  position: fixed;
+  top: 16px;
+  right: 535px;
 }
