@@ -22,7 +22,7 @@
           <img src="../icon/Logo.svg" alt="" />
         </div>
         <div>
-          <form action="/pages/cadastro.html" method="">
+          <form action="" method="">
             <div class="group-input">
               <label for="email">E-mail</label>
               <br />
@@ -61,7 +61,11 @@
     console.log('Antes')
     firebase
       .auth()
-      .signInWithEmailAndPassword('bauer.kaykemarins@gmail.com', '123456')
+      .signInWithEmailAndPassword(
+        'bauer.kaykemarins@gmail.com',
+        '123456' || 'lealmeidasilva1@gmail.com',
+        '123456'
+      )
       .then(response => {
         console.log('success', response)
       })
