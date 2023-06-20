@@ -98,3 +98,7 @@ button {
   top: 16px;
   right: 535px;
 }
+.erro {
+  color:red;
+  display: none;
+}
