@@ -44,6 +44,7 @@ section {
   border: 1px solid #afb3b1;
   border-radius: 4px;
   padding: 10px;
+  display: block;
 }
 a {
   color: #808080;
@@ -76,11 +77,13 @@ button {
   background: #8257e5;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 #cadastrar {
   background: #04d361;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 .formCadastro {
   width: 589px;
@@ -98,7 +101,18 @@ button {
   top: 16px;
   right: 535px;
 }
-.erro {
-  color:red;
-  display: none;
+.group-input a{
+  position: absolute;
+  visibility: hidden;
+}
+.group-input-error{
+  font: 14px/24px 'Poppins', sans-serif;
+  color: #808080;
+}
+.group-input-error input{
+  border-color: red;
+}
+.group-input-error a{
+  color: red;
+  visibility: visible;
 }
