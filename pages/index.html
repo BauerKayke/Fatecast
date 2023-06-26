@@ -36,7 +36,7 @@
             <div class="link"><a href="">Esqueci minha senha</a></div>
 
             <div class="button">
-              <button id="entrar">Entrar</button>
+              <button id="entrar" onclick="login(form)">Entrar</button>
               <button id="cadastrar"><a href="../pages/cadastro.html">Cadastrar</a></button>
             </div>
           </form>
@@ -44,35 +44,11 @@
       </section>
     </main>
   </body>
+  <script src="../script/firebase_init.js" ></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
 
   <script>
-    const firebaseConfig = {
-      apiKey: 'AIzaSyDMSTH5e32kwv82bCXFkxzztnGyYgqTGRI',
-      authDomain: 'fatecast-b5ddc.firebaseapp.com',
-      projectId: 'fatecast-b5ddc',
-      storageBucket: 'fatecast-b5ddc.appspot.com',
-      messagingSenderId: '697483630100',
-      appId: '1:697483630100:web:3955c9cf4f79097ddb3901'
-    }
-    firebase.initializeApp(firebaseConfig)
-
-    console.log('Antes')
-    firebase
-      .auth()
-      .signInWithEmailAndPassword(
-        'bauer.kaykemarins@gmail.com',
-        '123456' || 'lealmeidasilva1@gmail.com',
-        '123456'
-      )
-      .then(response => {
-        console.log('success', response)
-      })
-      .catch(error => {
-        console.log('erro', error)
-      })
-    console.log('Depois')
+    
   </script>
-  <script src="../script/script.js"></script>
 </html>
