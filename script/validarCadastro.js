@@ -11,7 +11,7 @@ const senhaValue = senha.value;
 
 form2.addEventListener("submit", (event) => {
     event.preventDefault();
-    console.log(email.value)
+
     validarNome();
     validarEmail();
     validarRa();

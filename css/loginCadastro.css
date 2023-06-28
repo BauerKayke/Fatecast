@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
 main {
   display: flex;
   justify-content: center;
@@ -38,7 +37,7 @@ section {
   margin-bottom: 1.1510791366906474vh;
 }
 .down {
-  margin-bottom: 3.4532374100719423vh;
+  margin-bottom: 4vh;
 }
 .input {
   width: 27.013177159590043vw;

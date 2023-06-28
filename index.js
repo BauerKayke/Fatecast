@@ -1,22 +1,30 @@
-const firebaseConfig = {
-  apiKey: 'AIzaSyDMSTH5e32kwv82bCXFkxzztnGyYgqTGRI',
-  authDomain: 'fatecast-b5ddc.firebaseapp.com',
-  projectId: 'fatecast-b5ddc',
-  storageBucket: 'fatecast-b5ddc.appspot.com',
-  messagingSenderId: '697483630100',
-  appId: '1:697483630100:web:3955c9cf4f79097ddb3901'
-}
-firebase.initializeApp(firebaseConfig);
 
+function sessionOn() {
+  firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+      sessionPersistence()
+      window.location.replace("/pages/home.html")
+    }
+  })
+}
+function sessionPersistence() {
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+    .then(() => {
+      return firebase.auth().signInWithEmailAndPassword(email, password);
+    })
+    .catch((error) => {
+      let errorCode = error.code;
+      let errorMessage = error.message;
+      console.log(errorCode, errorMessage)
+    });
+}
 
 const form1 = document.querySelector('form')
-
 
 function login() {
   validarEmail()
   validarSenha()
 
-  console.log('Antes')
   firebase
     .auth()
     .signInWithEmailAndPassword(
@@ -24,13 +32,13 @@ function login() {
       form1.senha.value
     )
     .then(response => {
-      window.location.replace("/pages/home.html")
+      sessionOn()
       console.log('success', response)
     })
     .catch(error => {
+      alert(error)
       console.log('erro', error)
     })
-  console.log('Depois')
 }
 
 function validarEmail() {
@@ -48,6 +56,13 @@ function validarSenha() {
     const formItem = senha.parentElement;
     formItem.className = "group-input";
   }
+}
+function errorInput(input, message) {
+  const formItem = input.parentElement;
+  const textMessage = formItem.querySelector("a");
+
+  textMessage.innerText = message;
+  formItem.className = "group-input-error"
 }
 
 

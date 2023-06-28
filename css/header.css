@@ -1,3 +1,6 @@
+:root {
+  --text-body: #808080;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +8,7 @@
   background: #f7f8fa;
 }
 nav {
-  padding: 0px, 32px;
+  margin: 0px, 32px;
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -14,8 +17,23 @@ nav {
   height: 104px;
   background: #ffffff;
 }
-.logo {
-  background-color: #e6e8eb;
+.logo img,
+.logo,
+.tittle,
+.tittle-text,
+.tittle-text p {
+  background-color: #ffffff;
 }
-.logo > p {
+.tittle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+  gap: 20px;
+  margin: 0px 32px;
+}
+.tittle-text {
+  font: 1rem 'Inter';
+  color: var(--text-body);
+  font-weight: 400;
 }
