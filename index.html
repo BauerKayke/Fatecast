@@ -22,33 +22,34 @@
           <img src="../icon/Logo.svg" alt="" />
         </div>
         <div>
-          <form action="">
+          <form action="/" onsubmit="return false">
             <div class="group-input">
               <label for="email">E-mail</label>
               <br />
-              <input class="input" name="email" type="text" />
+              <input class="input" id="email" name="email" type="text" />
             </div>
             <div class="group-input down" id="down">
               <label for="senha">Senha</label>
               <br />
-              <input class="input" name="senha" type="password" />
+              <input class="input" id="senha" name="senha" type="password" />
             </div>
             <div class="link"><a href="">Esqueci minha senha</a></div>
 
             <div class="button">
-              <button id="entrar" onclick="login(form)">Entrar</button>
-              <button id="cadastrar"><a href="../pages/cadastro.html">Cadastrar</a></button>
+              <button id="entrar" onclick="login()">Entrar</button>
+              <button id="cadastrar">
+                <a href="../pages/cadastro.html">Cadastrar</a>
+              </button>
             </div>
           </form>
         </div>
       </section>
     </main>
   </body>
-  <script src="../script/firebase_init.js" ></script>
+
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="../firebase_init.js"></script>
 
-  <script>
-    
-  </script>
+  <script></script>
 </html>
