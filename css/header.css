@@ -7,8 +7,10 @@
   padding: 0;
   background: #f7f8fa;
 }
+body {
+  height: 100vh;
+}
 nav {
-  margin: 0px, 32px;
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -21,7 +23,7 @@ nav {
 .logo,
 .tittle,
 .tittle-text,
-.tittle-text p {
+p {
   background-color: #ffffff;
 }
 .tittle {
@@ -36,4 +38,85 @@ nav {
   font: 1rem 'Inter';
   color: var(--text-body);
   font-weight: 400;
+}
+.user-content {
+  display: flex;
+  background: #ffffff;
+  align-items: center;
+  font: 1rem 'Inter';
+  color: var(--text-body);
+  font-weight: 400;
+  margin: 0px 32px;
+}
+.user {
+  width: 3.6vw;
+  height: 7.1vh;
+  border-radius: 3.5rem;
+  border: 1px solid var(--text-body);
+  margin: 0px 32px;
+}
+.user img {
+  width: 3.5vw;
+  height: 6.8vh;
+  background: none;
+  border: none;
+}
+.menuBurguer {
+  display: none;
+}
+.menuOff {
+  display: none;
+}
+.menuList {
+  background: transparent;
+}
+.menuList ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  background: transparent;
+  align-items: center;
+}
+.menuList li {
+  margin: 8px;
+  background: transparent;
+  font: 1rem 'Inter';
+  color: var(--text-body);
+  font-weight: 400;
+}
+.menuList li:hover {
+  color: black;
+  font-weight: 600;
+}
+@media screen and (max-width: 1080px) {
+  .user img {
+    width: 3.5vw;
+    height: 6.8vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .menuList {
+    display: none;
+  }
+  .user-content {
+    display: none;
+  }
+  .menuBurguer {
+    display: block;
+  }
+  .menuBurguer {
+    background: transparent;
+  }
+  .menuBurguer img {
+    background: transparent;
+  }
+  .menuOn {
+    transition: all 3s linear;
+    position: fixed;
+    right: 0;
+    width: 400px;
+    height: 40vh;
+    background-color: purple;
+    opacity: 0.5;
+  }
 }
