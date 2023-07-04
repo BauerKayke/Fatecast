@@ -1,11 +1,12 @@
 :root {
   --text-body: #808080;
+  --background-itens: #fff;
+  --text-heading: #494d4b;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #f7f8fa;
 }
 body {
   height: 100vh;
@@ -61,6 +62,17 @@ p {
   background: none;
   border: none;
 }
+.btn_logout {
+  border: none;
+  background: var(--background-itens);
+  color: var(--text-heading);
+  font: 1.2rem 'Inter';
+  font-weight: 400;
+}
+.btn_logout:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
 .menuBurguer {
   display: none;
 }
@@ -73,33 +85,42 @@ p {
 .menuList ul {
   display: flex;
   list-style: none;
-  padding: 10px;
   background: transparent;
   align-items: center;
 }
 .menuList li {
-  margin: 8px;
+  margin: 10px;
   background: transparent;
   font: 1rem 'Inter';
   color: var(--text-body);
   font-weight: 400;
+  padding: 1.2rem;
 }
 .menuList li:hover {
   color: black;
   font-weight: 600;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1250px) {
+  * {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1100px) {
   .user img {
     width: 3.5vw;
     height: 6.8vh;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 1rem;
+  }
   .menuList {
     display: none;
   }
   .user-content {
-    display: none;
+    position: absolute;
+    margin-left: 80vh;
   }
   .menuBurguer {
     display: block;
@@ -118,5 +139,23 @@ p {
     height: 40vh;
     background-color: purple;
     opacity: 0.5;
+  }
+  .menuBar ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background: transparent;
+    align-items: center;
+  }
+  .menuBar li {
+    margin: 10px;
+    background: transparent;
+    font: 1rem 'Inter';
+    color: var(--text-body);
+    font-weight: 400;
+    padding: 1.2rem;
+  }
+  .btn_logout {
+    background: transparent;
   }
 }

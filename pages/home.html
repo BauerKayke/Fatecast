@@ -28,7 +28,9 @@
         <div class="menuList">
           <ul>
             <li>Podcast</li>
+
             <li>Temas</li>
+
             <li>Favoritos</li>
           </ul>
         </div>
@@ -37,20 +39,39 @@
           <div class="user">
             <img id="user-photo" src="../icon/user.png" alt="" />
           </div>
+          <div class="logout">
+            <button class="btn_logout" onclick="goOut()">Sair</button>
+          </div>
         </div>
         <div class="menuBurguer">
           <img src="../icon/menu.png" alt="" />
           <div class="menuOff">
-            <button>Sair</button>
+            <div class="user-content">
+              <p class="nameUser">Kayke Bauer</p>
+              <div class="user">
+                <img id="user-photo" src="../icon/user.png" alt="" />
+              </div>
+            </div>
+            <div class="menuBar">
+              <ul>
+                <li>
+                  <button class="btn_logout" onclick="goOut()">Sair</button>
+                </li>
+                <li>Podcast</li>
+
+                <li>Temas</li>
+
+                <li>Favoritos</li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <!--Amor depois a gente vai unificar esse logout e user-photo vamos fazer abrir uma telinha -->
       </nav>
     </header>
     <main>
       <section></section>
     </main>
+    <aside></aside>
   </body>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
