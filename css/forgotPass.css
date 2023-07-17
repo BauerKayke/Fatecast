@@ -1,0 +1,89 @@
+:root {
+  --text-body: #808080;
+  --background-itens: #fff;
+  --text-heading: #494d4b;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f7f8fa;
+}
+
+section {
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.32));
+  width: 36.71875vw;
+  height: 54.06546990496304vh;
+  background: var(--background-itens);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  align-items: left;
+  flex-direction: column;
+
+}
+#formMudarSenha{
+  margin: 54px 33px 0px 56px;
+}
+h2{
+  font: 24px/34px 'Archivo', sans-serif; 
+  font-weight: 600;
+}
+hr{
+  margin: 16px 0px 24px 0px;
+}
+.group-input {
+  font: 14px/24px 'Poppins', sans-serif;
+  color: var(--text-body);
+  margin-bottom: 2.302158273381295vh;
+}
+.input {
+  width: 15vw;
+  height: 5.913410770855332vh;
+  border: 1px solid #afb3b1;
+  border-radius: 4px;
+  padding: 10px;
+  display: block;
+}
+a {
+  color: var(--text-body);
+  font: 14px/24px 'Poppins', sans-serif;
+  font-weight: 400;
+}
+#enviar {
+  background: #04d361;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  height: 6.124604012671594vh;
+  width: 6.666666666666667vw;
+}
+.btnVoltar {
+  position: fixed;
+  top: 1.9007391763463568vh;
+  left: 0.8333333333333334vw;
+}
+.group-input a {
+  position: absolute;
+  visibility: hidden;
+}
+.group-input-error {
+  font: 14px/24px 'Poppins', sans-serif;
+  color: #808080;
+}
+.group-input-error input {
+  border-color: red;
+}
+.group-input-error a {
+  color: red;
+  visibility: visible;
+}
