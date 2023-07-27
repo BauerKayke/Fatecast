@@ -51,7 +51,7 @@
                 <span>8 Jan 2021</span>
                 <span>1:35:18</span>
               </div>
-              <button><img src="../icon/play_arrow.svg" alt=""></button>
+              <button class="play"><img src="../icon/play_arrow.svg" alt=""></button>
             </div>
           </div>
           <div class="lastRelease">
@@ -63,7 +63,7 @@
                 <span>8 Jan 2021</span>
                 <span>1:35:18</span>
               </div>
-              <button><img src="../icon/play_arrow.svg" alt=""></button>
+              <button class="play"><img src="../icon/play_arrow.svg" alt=""></button>
             </div>
           </div>
           <div class="lastRelease">
@@ -75,7 +75,7 @@
                 <span>8 Jan 2021</span>
                 <span>1:35:18</span>
               </div>
-              <button><img src="../icon/play_arrow.svg" alt=""></button>
+              <button class="play"><img src="../icon/play_arrow.svg" alt=""></button>
             </div>
           </div>
         </div>
@@ -112,9 +112,88 @@
           <button class="bnt-temas"><img src="../icon/Vector.svg" alt=""></button>
         </div>
         <h1>Todos os episódios</h1>
-        <div class="episodes-tittle">
-          
-        </div>
+        <table class="episodes">
+          <colgroup>
+            <col span="3">
+            <col span="1">
+            <col span="1">
+            <col span="1">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Podcast</th>
+              <th scope="col">Integrantes</th>
+              <th scope="col">Data</th>
+              <th scope="col">Duração</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="coluna img">
+                  <div class="img-tittle">
+                    <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
+                    <span id="ep-tittle">A vida é boa</span>
+                  </div>
+                  <a href="">Ver mais...</a>
+                </div>
+              </td>
+              <td>
+                <div class="coluna integrantes">
+                  <p id="ep-integrantes">João, Maria</p>
+                </div>
+              </td>
+              <td>
+                <div class="coluna data">
+                  <p id="ep-data">8 Jan 2021</p>
+                </div>
+              </td>
+              <td>
+                <div class="coluna tempo">
+                  <p id="ep-tempo">1h 30m 20s</p>
+                </div>
+              </td>
+              <td>
+                <div class="coluna button">
+                  <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
+                  <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
+                </div>
+              </td>
+            </tr>
+                        <tr>
+              <td>
+                <div class="coluna img">
+                  <div class="img-tittle">
+                    <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
+                    <span id="ep-tittle">A vida é boa</span>
+                  </div>
+                  <a href="">Ver mais...</a>
+                </div>
+              </td>
+              <td>
+                <div class="coluna integrantes">
+                  <p id="ep-integrantes">João, Maria</p>
+                </div>
+              </td>
+              <td>
+                <div class="coluna data">
+                  <p id="ep-data">8 Jan 2021</p>
+                </div>
+              </td>
+              <td>
+                <div class="coluna tempo">
+                  <p id="ep-tempo">1h 30m 20s</p>
+                </div>
+              </td>
+              <td>
+                <div class="coluna button">
+                  <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
+                  <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
     <aside></aside>

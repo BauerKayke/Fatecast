@@ -35,8 +35,8 @@
         <div class="btnVoltar">
           <a href="../index.html"><img src="../icon/Voltar.svg" alt="" /></a>
         </div>
-        <div>
-          <form action="" id="formMudarSenha">
+        <div class="content">
+          <div id="formMudarSenha">
             <h2>Mudar Senha</h2>
             <hr>
             <div class="group-input">
@@ -63,10 +63,18 @@
               />
               <a>Mensagem de erro</a>
             </div>
-            <div class="button">
-              <button id="enviar" type="submit">Confirmar</button>
+            
+            
+          </div>
+          <div class="footer">
+              <div class="footer-text">
+                <img src="../icon/Atenção.svg" alt="">
+                <p>Importante!Preencha todos os dados</p>
+              </div>
+              <div class="button">
+                <button id="enviar">Enviar</button>
+              </div>
             </div>
-          </form>
         </div>
       </section>
     </main>
@@ -76,4 +84,5 @@
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
   <script src="../firebase-init.js"></script>
   <script src="../index.js"></script>
+  <script src="../script/forgotPass.js"></script>
 </html>
