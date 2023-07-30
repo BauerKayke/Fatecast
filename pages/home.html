@@ -42,42 +42,19 @@
       <section>
         <h1>Ultimos lançamentos</h1>
         <div class="lastRelease-blocks">
-          <div class="lastRelease">
+          <div class="lastRelease" id="lastRelease-1">
             <div class="lastRelease-content">
-              <img src="../icon/user.png" alt="">
+              <img id="imgLastRelease-1" src="../icon/user.png" alt="">
               <div class="lastRelease-text">
-                <p>O que é um bom código?</p>
-                <span>Diego e Richard</span><br>
-                <span>8 Jan 2021</span>
-                <span>1:35:18</span>
+                <p id="tittleLastRelease-1">O que é um bom código?</p>
+                <span id="integrantesLastRelease-1">Diego e Richard</span><br>
+                <span id="dataLastRelease-1">8 Jan 2021</span>
+                <span id="timeLastRelease-1">1:35:18</span>
               </div>
               <button class="play"><img src="../icon/play_arrow.svg" alt=""></button>
             </div>
           </div>
-          <div class="lastRelease">
-            <div class="lastRelease-content">
-              <img src="../icon/user.png" alt="">
-              <div class="lastRelease-text">
-                <p>O que é um bom código?</p>
-                <span>Diego e Richard</span><br>
-                <span>8 Jan 2021</span>
-                <span>1:35:18</span>
-              </div>
-              <button class="play"><img src="../icon/play_arrow.svg" alt=""></button>
-            </div>
-          </div>
-          <div class="lastRelease">
-            <div class="lastRelease-content">
-              <img src="../icon/user.png" alt="">
-              <div class="lastRelease-text">
-                <p>O que é um bom código?</p>
-                <span>Diego e Richard</span><br>
-                <span>8 Jan 2021</span>
-                <span>1:35:18</span>
-              </div>
-              <button class="play"><img src="../icon/play_arrow.svg" alt=""></button>
-            </div>
-          </div>
+          <button id="addRelease">Adicionar Elemento</button>
         </div>
 
         <div class="temas-tittle">
@@ -85,30 +62,15 @@
           <button>Temas favoritos</button>
         </div>
         <div class="temas-blocks">
-          <div class="temas">
+          <div class="temas" id="temas-1">
             <div class="temas-content">
-              <img src="../icon/user.png" alt="">
+              <img id="imgTemas-1" src="../icon/user.png" alt="">
               <div class="temas-text">
-                <p>Palestras</p>
+                <p id="tittleTemas-1">Palestras</p>
               </div>
             </div>
           </div>
-          <div class="temas">
-            <div class="temas-content">
-              <img src="../icon/user.png" alt="">
-              <div class="temas-text">
-                <p>Palestras</p>
-              </div>
-            </div>
-          </div>
-          <div class="temas">
-            <div class="temas-content">
-              <img src="../icon/user.png" alt="">
-              <div class="temas-text">
-                <p>Palestras</p>
-              </div>
-            </div>
-          </div>
+          <button id="addTemas">Adicionar Elemento</button>
           <button class="bnt-temas"><img src="../icon/Vector.svg" alt=""></button>
         </div>
         <h1>Todos os episódios</h1>
@@ -192,7 +154,7 @@
                 </div>
               </td>
             </tr>
-                        <tr>
+            <tr>
               <td>
                 <div class="coluna img">
                   <div class="img-tittle">
@@ -224,7 +186,7 @@
                 </div>
               </td>
             </tr>
-                        <tr>
+            <tr>
               <td>
                 <div class="coluna img">
                   <div class="img-tittle">
@@ -256,38 +218,7 @@
                 </div>
               </td>
             </tr>
-                        <tr>
-              <td>
-                <div class="coluna img">
-                  <div class="img-tittle">
-                    <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
-                    <span id="ep-tittle">A vida é boa</span>
-                  </div>
-                  <a href="">Ver mais...</a>
-                </div>
-              </td>
-              <td>
-                <div class="coluna integrantes">
-                  <p id="ep-integrantes">João, Maria</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna data">
-                  <p id="ep-data">8 Jan 2021</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna tempo">
-                  <p id="ep-tempo">1h 30m 20s</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna button">
-                  <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
-                  <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
-                </div>
-              </td>
-            </tr>
+
           </tbody>
         </table>
         <div class="btn-pages">
@@ -300,8 +231,10 @@
   </body>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
   <script src="../firebase-init.js"></script>
   <script src="../index.js"></script>
   <script src="../authGuard.js"></script>
   <script src="../script/home.js"></script>
+  <script src="../data/data.js"></script>
 </html>
