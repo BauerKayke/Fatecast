@@ -1,240 +1,242 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="shortcut icon" href="../icon/music 1.svg" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Inter:wght@400;500&family=Lexend:wght@500;600&family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Fatecast</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="tittle">
-          <div class="logo">
-            <img src="../icon/Logo.svg" alt="" />
-          </div>
-          |
-          <div class="tittle-text">
-            <p>O melhor para você ouvir, sempre</p>
-          </div>
-        </div>
 
-        <div class="user-content">
-          <p class="nameUser">Kayke Bauer</p>
-          <div class="user">
-            <img id="user-photo" src="../icon/user.png" alt="" />
-          </div>
-          <div class="logout">
-            <button class="btn_logout" onclick="goOut()">Sair</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="shortcut icon" href="../icon/music 1.svg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Inter:wght@400;500&family=Lexend:wght@500;600&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <title>Fatecast</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="tittle">
+        <div class="logo">
+          <img src="../icon/Logo.svg" alt="" />
+        </div>
+        |
+        <div class="tittle-text">
+          <p>O melhor para você ouvir, sempre</p>
+        </div>
+      </div>
+
+      <div class="user-content">
+        <p class="nameUser">Kayke Bauer</p>
+        <div class="user">
+          <img id="user-photo" src="../icon/user.png" alt="" />
+        </div>
+        <div class="logout">
+          <button class="btn_logout" onclick="goOut()">Sair</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Ultimos lançamentos</h1>
+      <div class="lastRelease-blocks">
+        <div class="lastRelease" id="lastRelease-1">
+          <div class="lastRelease-content">
+            <img id="imgLastRelease-1" src="../icon/user.png" alt="">
+            <div class="lastRelease-text">
+              <p id="tittleLastRelease-1">O que é um bom código?</p>
+              <span id="integrantesLastRelease-1">Diego e Richard</span><br>
+              <span id="dataLastRelease-1">8 Jan 2021</span>
+              <span id="timeLastRelease-1">1:35:18</span>
+            </div>
+            <button class="play"><img src="../icon/play_arrow.svg" alt=""></button>
           </div>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h1>Ultimos lançamentos</h1>
-        <div class="lastRelease-blocks">
-          <div class="lastRelease" id="lastRelease-1">
-            <div class="lastRelease-content">
-              <img id="imgLastRelease-1" src="../icon/user.png" alt="">
-              <div class="lastRelease-text">
-                <p id="tittleLastRelease-1">O que é um bom código?</p>
-                <span id="integrantesLastRelease-1">Diego e Richard</span><br>
-                <span id="dataLastRelease-1">8 Jan 2021</span>
-                <span id="timeLastRelease-1">1:35:18</span>
-              </div>
-              <button class="play"><img src="../icon/play_arrow.svg" alt=""></button>
+        <button id="addRelease">Adicionar Elemento</button>
+      </div>
+
+      <div class="temas-tittle">
+        <h1>Temas</h1>
+        <button>Temas favoritos</button>
+      </div>
+      <div class="temas-blocks">
+        <div class="temas" id="temas-1">
+          <div class="temas-content">
+            <img id="imgTemas-1" src="../icon/user.png" alt="">
+            <div class="temas-text">
+              <p id="tittleTemas-1">Palestras</p>
             </div>
           </div>
-          <button id="addRelease">Adicionar Elemento</button>
         </div>
-
-        <div class="temas-tittle">
-          <h1>Temas</h1>
-          <button>Temas favoritos</button>
-        </div>
-        <div class="temas-blocks">
-          <div class="temas" id="temas-1">
-            <div class="temas-content">
-              <img id="imgTemas-1" src="../icon/user.png" alt="">
-              <div class="temas-text">
-                <p id="tittleTemas-1">Palestras</p>
+        <button id="addTemas">Adicionar Elemento</button>
+        <button class="bnt-temas"><img src="../icon/Vector.svg" alt=""></button>
+      </div>
+      <h1>Todos os episódios</h1>
+      <table class="episodes">
+        <colgroup>
+          <col span="2">
+          <col span="2">
+          <col span="2">
+          <col span="2">
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Podcast</th>
+            <th scope="col">Integrantes</th>
+            <th scope="col">Data</th>
+            <th scope="col">Duração</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="coluna img">
+                <div class="img-tittle">
+                  <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
+                  <span id="ep-tittle">A vida é boa</span>
+                </div>
+                <a href="">Ver mais...</a>
               </div>
-            </div>
-          </div>
-          <button id="addTemas">Adicionar Elemento</button>
-          <button class="bnt-temas"><img src="../icon/Vector.svg" alt=""></button>
-        </div>
-        <h1>Todos os episódios</h1>
-        <table class="episodes">
-          <colgroup>
-            <col span="2">
-            <col span="2">
-            <col span="2">
-            <col span="2">
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope="col">Podcast</th>
-              <th scope="col">Integrantes</th>
-              <th scope="col">Data</th>
-              <th scope="col">Duração</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="coluna img">
-                  <div class="img-tittle">
-                    <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
-                    <span id="ep-tittle">A vida é boa</span>
-                  </div>
-                  <a href="">Ver mais...</a>
+            </td>
+            <td>
+              <div class="coluna integrantes">
+                <p id="ep-integrantes">João, Maria</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna data">
+                <p id="ep-data">8 Jan 2021</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna tempo">
+                <p id="ep-tempo">1h 30m 20s</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna button">
+                <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
+                <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="coluna img">
+                <div class="img-tittle">
+                  <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
+                  <span id="ep-tittle">A vida é boa</span>
                 </div>
-              </td>
-              <td>
-                <div class="coluna integrantes">
-                  <p id="ep-integrantes">João, Maria</p>
+                <a href="">Ver mais...</a>
+              </div>
+            </td>
+            <td>
+              <div class="coluna integrantes">
+                <p id="ep-integrantes">João, Maria</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna data">
+                <p id="ep-data">8 Jan 2021</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna tempo">
+                <p id="ep-tempo">1h 30m 20s</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna button">
+                <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
+                <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="coluna img">
+                <div class="img-tittle">
+                  <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
+                  <span id="ep-tittle">A vida é boa</span>
                 </div>
-              </td>
-              <td>
-                <div class="coluna data">
-                  <p id="ep-data">8 Jan 2021</p>
+                <a href="">Ver mais...</a>
+              </div>
+            </td>
+            <td>
+              <div class="coluna integrantes">
+                <p id="ep-integrantes">João, Maria</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna data">
+                <p id="ep-data">8 Jan 2021</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna tempo">
+                <p id="ep-tempo">1h 30m 20s</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna button">
+                <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
+                <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="coluna img">
+                <div class="img-tittle">
+                  <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
+                  <span id="ep-tittle">A vida é boa</span>
                 </div>
-              </td>
-              <td>
-                <div class="coluna tempo">
-                  <p id="ep-tempo">1h 30m 20s</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna button">
-                  <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
-                  <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="coluna img">
-                  <div class="img-tittle">
-                    <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
-                    <span id="ep-tittle">A vida é boa</span>
-                  </div>
-                  <a href="">Ver mais...</a>
-                </div>
-              </td>
-              <td>
-                <div class="coluna integrantes">
-                  <p id="ep-integrantes">João, Maria</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna data">
-                  <p id="ep-data">8 Jan 2021</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna tempo">
-                  <p id="ep-tempo">1h 30m 20s</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna button">
-                  <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
-                  <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="coluna img">
-                  <div class="img-tittle">
-                    <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
-                    <span id="ep-tittle">A vida é boa</span>
-                  </div>
-                  <a href="">Ver mais...</a>
-                </div>
-              </td>
-              <td>
-                <div class="coluna integrantes">
-                  <p id="ep-integrantes">João, Maria</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna data">
-                  <p id="ep-data">8 Jan 2021</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna tempo">
-                  <p id="ep-tempo">1h 30m 20s</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna button">
-                  <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
-                  <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="coluna img">
-                  <div class="img-tittle">
-                    <img id="ep-img" src="../icon/user.png" alt="" width="100" height="100">
-                    <span id="ep-tittle">A vida é boa</span>
-                  </div>
-                  <a href="">Ver mais...</a>
-                </div>
-              </td>
-              <td>
-                <div class="coluna integrantes">
-                  <p id="ep-integrantes">João, Maria</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna data">
-                  <p id="ep-data">8 Jan 2021</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna tempo">
-                  <p id="ep-tempo">1h 30m 20s</p>
-                </div>
-              </td>
-              <td>
-                <div class="coluna button">
-                  <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
-                  <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
-                </div>
-              </td>
-            </tr>
+                <a href="">Ver mais...</a>
+              </div>
+            </td>
+            <td>
+              <div class="coluna integrantes">
+                <p id="ep-integrantes">João, Maria</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna data">
+                <p id="ep-data">8 Jan 2021</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna tempo">
+                <p id="ep-tempo">1h 30m 20s</p>
+              </div>
+            </td>
+            <td>
+              <div class="coluna button">
+                <button id="btn-star"><img src="../icon/Star 1.svg" alt=""></button>
+                <button class="play" id="btn-play"><img src="../icon/play_arrow.svg" alt=""></button>
+              </div>
+            </td>
+          </tr>
 
-          </tbody>
-        </table>
-        <div class="btn-pages">
-          <button>Carregar mais</button>
-          <button>Favoritos</button>
-        </div>
-      </section>
-    </main>
-    <aside></aside>
-  </body>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-  <script src="../firebase-init.js"></script>
-  <script src="../index.js"></script>
-  <script src="../authGuard.js"></script>
-  <script src="../script/home.js"></script>
-  <script src="../data/data.js"></script>
+        </tbody>
+      </table>
+      <div class="btn-pages">
+        <button>Carregar mais</button>
+        <button>Favoritos</button>
+      </div>
+    </section>
+  </main>
+  <aside></aside>
+</body>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="../firebase-init.js"></script>
+<script src="../index.js"></script>
+<script src="../authGuard.js"></script>
+<script src="../script/home.js"></script>
+<script src="../data/data.js"></script>
+
 </html>

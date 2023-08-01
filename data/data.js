@@ -1,5 +1,5 @@
 let n = 6
-window.addEventListener('loadstart', loadImage())
+loadImage()
 function loadImage(newId = 1, type = 0) {
   const newImgTemas = document.querySelector(`#imgTemas-${newId}`)
   const newImgRelease = document.querySelector(`#imgLastRelease-${newId}`);

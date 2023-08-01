@@ -1,5 +1,3 @@
-
-
 function goOut() {
   firebase.auth().signOut().then(() => {
     console.log('success');
