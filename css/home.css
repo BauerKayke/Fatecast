@@ -220,9 +220,6 @@ table,th,td{
 .play img{
   background-color: transparent;
 }
-table tbody tr:nth-last-child(-n+1) {
-  filter: blur(1.5px); /* Ajuste o valor para controlar a intensidade do desfoque */
-}
 .btn-pages{
   position: absolute;
   bottom: 22px;
@@ -241,4 +238,16 @@ table tbody tr:nth-last-child(-n+1) {
   border: 1px solid var(--text-body-2, #AFB2B1);
   background: var(--items-background, #FFF);
   cursor: pointer;
+}
+.btn-sideBar{
+  position: fixed;
+  top: 129px;
+  right: 0px;
+}
+.btn-sideBar button{
+  border: none;
+  background: transparent;
+}
+.sideBar{
+  
 }
