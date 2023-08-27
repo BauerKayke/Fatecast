@@ -1,5 +1,4 @@
 
-
 const form2 = document.getElementById("formCadastro");
 const nome = document.getElementById("nome");
 const email = document.getElementById("email");
@@ -8,6 +7,11 @@ const senha = document.getElementById("senha");
 const senhaConf = document.getElementById("senhaConf");
 const emailValue = email.value;
 const senhaValue = senha.value;
+
+const db = firebase.firestore()
+
+
+
 
 form2.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -87,10 +91,21 @@ function errorInput(input, message) {
     formItem.className = "group-input-error"
 }
 
-function register() {
+async function register() {
+
+    db.collection('users').add({
+        userName: `${nome.value}`,
+        email: `${email.value}`,
+        senha: `${senha.value}`
+    }).then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+    }).catch((error) => {
+        console.error("Error adding document: ", error);
+    });
+
     firebase.auth().createUserWithEmailAndPassword(email.value, senha.value)
         .then((userCredential) => {
-            // Novo usuário criado com sucesso
+
             const user = userCredential.user;
             console.log('Successfully created new user:', user.uid);
         })
