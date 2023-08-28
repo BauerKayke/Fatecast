@@ -4,3 +4,5 @@
 /package-lock.json
 # Ignore o package
 /package.json
+
+./script/fatecast-b5ddc-firebase-adminsdk-scm6z-4c80b54b2f.json

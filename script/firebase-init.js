@@ -1,3 +1,8 @@
+
+
+import firebase from "../node_modules/@firebase/app";
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyDMSTH5e32kwv82bCXFkxzztnGyYgqTGRI",
   authDomain: "fatecast-b5ddc.firebaseapp.com",
@@ -6,5 +11,13 @@ const firebaseConfig = {
   messagingSenderId: "697483630100",
   appId: "1:697483630100:web:3955c9cf4f79097ddb3901"
 };
-firebase.initializeApp(firebaseConfig);
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+
+
+
+
 

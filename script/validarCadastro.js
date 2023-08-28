@@ -8,7 +8,6 @@ const senhaConf = document.getElementById("senhaConf");
 const emailValue = email.value;
 const senhaValue = senha.value;
 
-const db = firebase.firestore()
 
 
 
