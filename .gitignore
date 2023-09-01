@@ -5,4 +5,4 @@
 # Ignore o package
 /package.json
 
-/src
+/src/src
