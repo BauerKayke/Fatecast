@@ -1,36 +1,16 @@
 
-
 function sessionOn() {
   firebase.auth().onAuthStateChanged(user => {
     if (user) {
       sessionPersistence()
-      function verificarAdministrador() {
-        const user = firebase.auth().currentUser;
-
-        if (user) {
-
-          if (user.isAdmin) {
-            console.log("O usuário é um administrador.");
-            window.location.replace("/pages/homeAdmin.html")
-          } else {
-            console.log("O usuário não é um administrador.");
-            window.location.replace("/pages/home.html")
-          }
-        } else {
-          console.log("Nenhum usuário autenticado.");
-        }
-      }
-      firebase.auth().onAuthStateChanged(verificarAdministrador);
-
-
+      window.location.replace("/pages/home.html")
     }
   })
 }
 function sessionPersistence() {
   firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
     .then(() => {
-      if (email)
-        return firebase.auth().signInWithEmailAndPassword(email, password);
+      return firebase.auth().signInWithEmailAndPassword(email, password);
     })
     .catch((error) => {
       let errorCode = error.code;
