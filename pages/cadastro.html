@@ -1,76 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/loginCadastro.css" />
+    <link rel="shortcut icon" href="../icon/music 1.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Inter:wght@400;500&family=Lexend:wght@500;600&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fatecast</title>
+  </head>
+  <body>
+    <main>
+      <section class="formCadastro">
+        <div class="btnVoltar">
+          <a href="../index.html"><img src="../icon/Voltar.svg" alt="" /></a>
+        </div>
+        <div class="logoCadastro">
+          <img src="../icon/Logo.svg" alt="" />
+        </div>
+        <div>
+          <form action="" id="formCadastro">
+            <div class="group-input">
+              <label for="nome">Nome</label>
+              <br />
+              <input
+                class="input"
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome aqui."
+                autocomplete="cc-name"
+              />
+              <a>Mensagem de erro.</a>
+            </div>
+            <div class="group-input">
+              <label for="email">E-mail</label>
+              <br />
+              <input
+                class="input"
+                type="email"
+                id="email"
+                placeholder="Digite seu email aqui."
+                autocomplete="email"
+              />
+              <a>Mensagem de erro</a>
+            </div>
+            <div class="group-input">
+              <label for="ra">RA</label>
+              <br />
+              <input
+                class="input"
+                type="text"
+                id="ra"
+                placeholder="Digite seu ra aqui."
+              />
+              <a>Mensagem de erro.</a>
+            </div>
+            <div class="group-input">
+              <label for="senha">Senha</label>
+              <br />
+              <input
+                class="input"
+                type="password"
+                id="senha"
+                placeholder="Crie uma senha com no mínimo 6 digítos."
+              />
+              <a>Mensagem de erro.</a>
+            </div>
+            <div class="group-input down">
+              <label for="senhaConf">Confirmar senha</label>
+              <br />
+              <input
+                class="input"
+                type="password"
+                id="senhaConf"
+                placeholder="Confirme sua senha."
+              />
+              <a>Mensagem de erro.</a>
+            </div>
+            <div class="button">
+              <button id="cadastrar" type="submit">Confirmar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/loginCadastro.css" />
-  <link rel="shortcut icon" href="../icon/music 1.svg" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Inter:wght@400;500&family=Lexend:wght@500;600&family=Poppins:wght@400;500&display=swap"
-    rel="stylesheet" />
-  <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore-compat.js"></script>
-  <title>Fatecast</title>
-</head>
-
-<body>
-  <main>
-    <section class="formCadastro">
-      <div class="btnVoltar">
-        <a href="../index.html"><img src="../icon/Voltar.svg" alt="" /></a>
-      </div>
-      <div class="logoCadastro">
-        <img src="../icon/Logo.svg" alt="" />
-      </div>
-      <div>
-        <form action="" id="formCadastro">
-          <div class="group-input">
-            <label for="nome">Nome</label>
-            <br />
-            <input class="input" type="text" id="nome" placeholder="Digite seu nome aqui." autocomplete="cc-name" />
-            <a>Mensagem de erro.</a>
-          </div>
-          <div class="group-input">
-            <label for="email">E-mail</label>
-            <br />
-            <input class="input" type="email" id="email" placeholder="Digite seu email aqui." autocomplete="email" />
-            <a>Mensagem de erro</a>
-          </div>
-          <div class="group-input">
-            <label for="ra">RA</label>
-            <br />
-            <input class="input" type="text" id="ra" placeholder="Digite seu ra aqui." />
-            <a>Mensagem de erro.</a>
-          </div>
-          <div class="group-input">
-            <label for="senha">Senha</label>
-            <br />
-            <input class="input" type="password" id="senha" placeholder="Crie uma senha com no mínimo 6 digítos." />
-            <a>Mensagem de erro.</a>
-          </div>
-          <div class="group-input down">
-            <label for="senhaConf">Confirmar senha</label>
-            <br />
-            <input class="input" type="password" id="senhaConf" placeholder="Confirme sua senha." />
-            <a>Mensagem de erro.</a>
-          </div>
-          <div class="button">
-            <button id="cadastrar" type="submit">Confirmar</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-</body>
-
-
-
-<script src="../firebase-init.js"></script>
-<script src="../index.js"></script>
-<script src="../script/validarCadastro.js"></script>
-
+  <script src="../firebase-init.js"></script>
+  <script src="../index.js"></script>
+  <script src="../script/validarCadastro.js"></script>
 </html>

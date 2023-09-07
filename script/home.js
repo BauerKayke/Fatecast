@@ -1,4 +1,3 @@
-
 function goOut() {
   firebase.auth().signOut().then(() => {
     console.log('success');
@@ -7,28 +6,6 @@ function goOut() {
     alert(error)
     console.log('erro', error)
   })
-}
-
-
-
-
-
-function sideBar() {
-  const btnSide = document.querySelector('.btn-sideBar')
-  const sideBar = document.querySelector('.sideBar')
-  btnSide.addEventListener('click', function () {
-    if (sideBar.classList.contains('offSide')) {
-      sideBar.classList.remove('offSide')
-      sideBar.classList.add('onSide')
-    }
-    else {
-      sideBar.classList.add('offSide')
-      sideBar.classList.remove('onSide')
-    }
-    console.log('foi')
-  })
-
-
 }
 
 let idRelease = 1;

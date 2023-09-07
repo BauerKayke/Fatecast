@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/loginCadastro.css" />
+    <link rel="shortcut icon" href="../icon/music 1.svg" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/loginCadastro.css" />
-  <link rel="shortcut icon" href="../icon/music 1.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Inter:wght@400;500&family=Lexend:wght@500;600&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Inter:wght@400;500&family=Lexend:wght@500;600&family=Poppins:wght@400;500&display=swap"
-    rel="stylesheet" />
+    <title>Fatecast</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="logo">
+          <img src="../icon/Logo.svg" alt="" />
+        </div>
+        <div>
+          <form action="/" onsubmit="return false">
+            <div class="group-input">
+              <label for="email">E-mail</label>
+              <br />
+              <input class="input" id="email" name="email" type="text" />
+              <a>Mensagem de erro.</a>
+            </div>
+            <div class="group-input down" id="down">
+              <label for="senha">Senha</label>
+              <br />
+              <input class="input" id="senha" name="senha" type="password" />
+              <a>Mensagem de erro.</a>
+            </div>
+            <div class="link"><a href="./pages/forgotPassEmail.html">Esqueci minha senha</a></div>
 
-  <title>Fatecast</title>
-</head>
+            <div class="button">
+              <button id="entrar" onclick="login()">Entrar</button>
+              <button id="cadastrar">
+                <a href="../pages/cadastro.html">Cadastrar</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 
-<body>
-  <main>
-    <section>
-      <div class="logo">
-        <img src="../icon/Logo.svg" alt="" />
-      </div>
-      <div>
-        <form action="/" onsubmit="return false">
-          <div class="group-input">
-            <label for="email">E-mail</label>
-            <br />
-            <input class="input" id="email" name="email" type="text" />
-            <a>Mensagem de erro.</a>
-          </div>
-          <div class="group-input down" id="down">
-            <label for="senha">Senha</label>
-            <br />
-            <input class="input" id="senha" name="senha" type="password" />
-            <a>Mensagem de erro.</a>
-          </div>
-          <div class="link"><a href="./pages/forgotPassEmail.html">Esqueci minha senha</a></div>
-
-          <div class="button">
-            <button id="entrar" onclick="login()">Entrar</button>
-            <button id="cadastrar">
-              <a href="../pages/cadastro.html">Cadastrar</a>
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-</body>
-
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-<script src="../firebase-init.js"></script>
-<script src="../index.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="../firebase-init.js"></script>
+  <script src="../index.js"></script>
 </html>
