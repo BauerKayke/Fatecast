@@ -1,0 +1,11 @@
+<svg width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 22">
+<g id="Rectangle 15">
+<mask id="path-1-inside-1_197834_2010" fill="white">
+<path d="M0 8C0 3.58172 3.58172 0 8 0H43V45H8C3.58172 45 0 41.4183 0 37V8Z"/>
+</mask>
+<path d="M-2 8C-2 2.47715 2.47715 -2 8 -2H43V2H8C4.68629 2 2 4.68629 2 8H-2ZM43 47H8C2.47715 47 -2 42.5228 -2 37H2C2 40.3137 4.68629 43 8 43H43V47ZM8 47C2.47715 47 -2 42.5228 -2 37V8C-2 2.47715 2.47715 -2 8 -2V2C4.68629 2 2 4.68629 2 8V37C2 40.3137 4.68629 43 8 43V47ZM43 0V45V0Z" fill="#6F48C9" mask="url(#path-1-inside-1_197834_2010)"/>
+</g>
+<path id="Path" d="M27 15.6667L20.3333 22.3333L27 29" stroke="#6F48C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

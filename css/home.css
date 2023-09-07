@@ -242,3 +242,12 @@ table tbody tr:nth-last-child(-n+1) {
   background: var(--items-background, #FFF);
   cursor: pointer;
 }
+.btn-sideBar{
+  position: fixed;
+  top: 129px;
+  right: 0px;
+}
+.btn-sideBar button{
+  border: none;
+  background: transparent;
+}

@@ -1,4 +1,5 @@
 let n = 6
+
 loadImage()
 function loadImage(newId = 1, type = 0) {
   const newImgTemas = document.querySelector(`#imgTemas-${newId}`)
@@ -6,7 +7,6 @@ function loadImage(newId = 1, type = 0) {
   const storage = firebase.storage();
   const storageRef = storage.ref();
   const newImgRef = storageRef.child(`Imagens podcast/Rectangle ${n}.jpg`);
-
 
   newImgRef.getDownloadURL()
     .then((url) => {

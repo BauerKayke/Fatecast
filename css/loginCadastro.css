@@ -85,6 +85,12 @@ button {
   border: none;
   cursor: pointer;
 }
+#cadastrar a{
+  text-decoration: none;
+  color: #ffffff;
+  font: 14px/26px 'Archivo', sans-serif;
+  font-weight: 600;
+}
 
 .formCadastro {
   width: 43.118594436310396vw;
