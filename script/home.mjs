@@ -53,7 +53,7 @@ function fav() {
   })
 }
 
-const btnLogout = document.querySelector('.sair').addEventListener('click', goOut())
+const btnLogout = document.querySelector('.sair').addEventListener('click', goOut)
 function goOut() {
 
   firebase.auth().signOut().then(() => {
