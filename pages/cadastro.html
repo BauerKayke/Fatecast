@@ -25,36 +25,35 @@
         <img src="../icon/Logo.svg" alt="" />
       </div>
       <div>
-        <form action="" id="formCadastro">
+        <form action="/" id="formCadastro">
           <div class="group-input">
             <label for="nome">Nome</label>
             <br />
-            <input class="input" type="text" id="nome" placeholder="Digite seu nome aqui." autocomplete="cc-name" />
-            <a>Mensagem de erro.</a>
+            <input class="input validar nome" type="text" name="nome" id="nome" placeholder="Digite seu nome aqui."
+              autocomplete="cc-name" />
           </div>
           <div class="group-input">
             <label for="email">E-mail</label>
             <br />
-            <input class="input" type="email" id="email" placeholder="Digite seu email aqui." autocomplete="email" />
-            <a>Mensagem de erro</a>
+            <input class="input  validar email" type="email" name="email" id="email"
+              placeholder="Digite seu email aqui." autocomplete="email" />
           </div>
           <div class="group-input">
             <label for="ra">RA</label>
             <br />
-            <input class="input" type="text" id="ra" placeholder="Digite seu ra aqui." />
-            <a>Mensagem de erro.</a>
+            <input class="input  validar ra" type="text" name="RA" id="ra" placeholder="Digite seu ra aqui." />
           </div>
           <div class="group-input">
             <label for="senha">Senha</label>
             <br />
-            <input class="input" type="password" id="senha" placeholder="Crie uma senha com no mínimo 6 digítos." />
-            <a>Mensagem de erro.</a>
+            <input class="input  validar senha" type="password" name="senha" id="senha"
+              placeholder="Crie uma senha com no mínimo 3 digítos." />
           </div>
           <div class="group-input down">
             <label for="senhaConf">Confirmar senha</label>
             <br />
-            <input class="input" type="password" id="senhaConf" placeholder="Confirme sua senha." />
-            <a>Mensagem de erro.</a>
+            <input name="" class="validar input senhaRep" name="Confirmar senha" type="password" id="senhaConf"
+              placeholder="Confirme sua senha." />
           </div>
           <div class="button">
             <button id="cadastrar" type="submit">Confirmar</button>

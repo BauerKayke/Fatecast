@@ -1,14 +1,7 @@
 import { loadImage, getFirebaseImageNames } from '../data/data.mjs';
 
-function goOut() {
-  firebase.auth().signOut().then(() => {
-    console.log('success');
-    window.location.replace("../index.html");
-  }).catch(error => {
-    alert(error)
-    console.log('erro', error)
-  })
-}
+
+
 getFirebaseImageNames().then((fileNames) => {
   // Carregue as imagens para cada tipo de elemento
   loadImagesForAllElementsOfType('lastRelease', fileNames);
@@ -59,6 +52,19 @@ function fav() {
     })
   })
 }
+
+const btnLogout = document.querySelector('.sair').addEventListener('click', goOut())
+function goOut() {
+
+  firebase.auth().signOut().then(() => {
+    console.log('success');
+    window.location.replace("../index.html");
+  }).catch(error => {
+    alert(error)
+    console.log('erro', error)
+  })
+}
+
 fav()
 
 

@@ -19,17 +19,11 @@ function sessionPersistence() {
     });
 }
 
-const form1 = document.querySelector('form')
-
 function login() {
-  validarEmail()
-  validarSenha()
-
   firebase
     .auth()
     .signInWithEmailAndPassword(
-      form1.email.value,
-      form1.senha.value
+      email.value, senha.value
     )
     .then(response => {
       sessionOn()
@@ -41,29 +35,6 @@ function login() {
     })
 }
 
-function validarEmail() {
-  if (form1.email.value === "") {
-    errorInput(form1.email, "Preencha o campo obrigatório!");
-  } else {
-    const formItem = email.parentElement;
-    formItem.className = "group-input";
-  }
-}
-function validarSenha() {
-  if (form1.senha.value === "" || form1.senha.value.length < 6) {
-    errorInput(form1.senha, "Senha inválida!");
-  } else {
-    const formItem = senha.parentElement;
-    formItem.className = "group-input";
-  }
-}
-function errorInput(input, message) {
-  const formItem = input.parentElement;
-  const textMessage = formItem.querySelector("a");
-
-  textMessage.innerText = message;
-  formItem.className = "group-input-error"
-}
 
 
 
