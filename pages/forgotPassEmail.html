@@ -36,35 +36,37 @@
       <div class="btnVoltar">
         <a href="../index.html"><img src="../icon/Voltar.svg" alt="" /></a>
       </div>
-      <div class="content">
-        <div id="formMudarSenha">
-          <h2>Mudar Senha</h2>
-          <hr>
-          <div class="group-input">
-            <label for="email">Email</label>
-            <br />
-            <input class="input" type="text" id="email" placeholder="Digite seu email aqui." autocomplete="email" />
-            <a>Mensagem de erro.</a>
-          </div>
-          <div class="group-input">
-            <label for="emailC">Confirmar email</label>
-            <br />
-            <input class="input" type="email" id="emailC" placeholder="Digite seu email aqui." autocomplete="email" />
-            <a>Mensagem de erro</a>
-          </div>
+      <form action="/" id="formCadastro">
+        <div class="content">
+          <div id="formMudarSenha">
+            <h2>Mudar Senha</h2>
+            <hr>
 
+            <div class="group-input">
+              <label for="email">Email</label>
+              <br />
+              <input class="input  email  validar" name="email" type="text" id="email"
+                placeholder="Digite seu email aqui." autocomplete="email" />
+            </div>
+            <div class="group-input">
+              <label for="emailC">Confirmar email</label>
+              <br />
+              <input class="input  emailC  validar" name="emailC" type="email" id="emailC"
+                placeholder="Digite seu email aqui." autocomplete="email" />
+            </div>
 
-        </div>
-        <div class="footer">
-          <div class="footer-text">
-            <img src="../icon/Atenção.svg" alt="">
-            <p>Importante!Preencha todos os dados</p>
           </div>
-          <div class="button">
-            <button id="enviar">Enviar</button>
+          <div class="footer">
+            <div class="footer-text">
+              <img src="../icon/Atenção.svg" alt="">
+              <p>Importante!Preencha todos os dados</p>
+            </div>
+            <div class="button">
+              <button id="enviar" type="submit">Enviar</button>
+            </div>
           </div>
         </div>
-      </div>
+      </form>
     </section>
   </main>
 </body>
@@ -72,7 +74,10 @@
 <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-storage-compat.js"></script>
+<script src="../firebase-init.js"></script>
 <script src="../script/login.js"></script>
+<script src="../script/validarCadastro.js"></script>
 <script src="../script/forgotPass.js"></script>
+
 
 </html>

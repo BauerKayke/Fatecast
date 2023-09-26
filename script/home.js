@@ -1,4 +1,4 @@
-import { loadImage, getFirebaseImageNames } from '../data/data.mjs';
+import { loadImage, getFirebaseImageNames } from '../data/data.js';
 
 
 

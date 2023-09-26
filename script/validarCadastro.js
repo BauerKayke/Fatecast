@@ -10,8 +10,16 @@ class ValidaFormulario {
     }
     handleSubmit(e) {
         e.preventDefault()
+        const forgot = this.formulario.querySelector('emailC')
+        console.log("forgot")
         const fieldsValid = this.checkFields()
         const validPasswords = this.validPasswords()
+
+
+        if (forgot) {
+            console.log("Foi")
+            this.validForgotPass()
+        }
         if (fieldsValid && validPasswords) {
             this.formulario.submit()
             alert('Formulario enviado')
@@ -85,6 +93,26 @@ class ValidaFormulario {
         if (password.value.length < 3 || password.value.length > 8) {
             valid = false;
             this.createError(password, 'Senha precisa estar entre 3 e 8 caracteres')
+        }
+        return valid
+    }
+    validForgotPass() {
+        let valid = true
+        console.log("ta chegando")
+        const emailValue = this.formulario.querySelector('.email');
+        const emailCValue = this.formulario.querySelector('.emailC')
+        if (emailValue === null) {
+            this.createError(email, "Preencha o campo obrigatório!");
+            valid = false
+        }
+        if (emailCValue === null) {
+            this.createError(emailC, "Preencha o campo obrigatório!");
+            valid = false
+        }
+        if (emailCValue !== emailValue) {
+            this.createError(emailC, "Os emails devem ser iguais");
+            this.createError(email, "Os emails devem ser iguais");
+            valid = false
         }
         return valid
     }
