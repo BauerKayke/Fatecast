@@ -11,13 +11,9 @@ class ValidaFormulario {
     handleSubmit(e) {
         e.preventDefault()
         const forgot = this.formulario.querySelector('emailC')
-        console.log("forgot")
         const fieldsValid = this.checkFields()
         const validPasswords = this.validPasswords()
-
-
         if (forgot) {
-            console.log("Foi")
             this.validForgotPass()
         }
         if (fieldsValid && validPasswords) {

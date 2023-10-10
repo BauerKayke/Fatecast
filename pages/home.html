@@ -40,6 +40,21 @@
       </div>
     </nav>
   </header>
+  <aside>
+    <div class="group-side">
+      <div class="notSide">
+        <button class="btn-sideBar"><img class="imgSide" src="../icon/Group 22.svg" alt=""></button>
+      </div>
+      <div class="side">
+        <div class="side-Tocando">
+          <img src="../icon/Group.svg" alt="">
+          <p>Tocando agora</p>
+        </div>
+        <div class="sideImage"><img src="../icon/Rectangle.jpg" alt=""></div>
+        <div><input type="range" name="range" id="barraAudio" min="0" max="100"></div>
+      </div>
+    </div>
+  </aside>
   <main>
     <section>
       <h1>Ultimos lançamentos</h1>
@@ -277,14 +292,7 @@
       </div>
     </section>
   </main>
-  <aside>
-    <div class="btn-sideBar" onclick="sideBar()">
-      <button><img src="../icon/Group 22.svg" alt=""></button>
-    </div>
-    <div class="sideBar offSide">
-      <img src="../icon/Group.svg" alt="">
-    </div>
-  </aside>
+
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
@@ -293,7 +301,7 @@
 <script src="../firebase-init.js"></script>
 <script src="../script/login.js"></script>
 <script src="../script/authGuard.js"></script>
-<script type="module" src="../script/home.js"></script>
-<script type="module" src="../data/data.js"></script>
+<script type="module" src="../script/home.mjs"></script>
+<script type="module" src="../data/data.mjs"></script>
 
 </html>

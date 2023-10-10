@@ -4,6 +4,7 @@
   --text-heading: #494d4b;
   --shapes-02: #FAFAFC
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,10 +14,10 @@
 main {
   display: flex;
   justify-content: center;
-  
+
   height: 100vh;
   background: #f7f8fa;
-  
+
 }
 
 section {
@@ -30,35 +31,41 @@ section {
 
   display: flex;
   flex-direction: column;
-  margin-top: 67px;   
-  
+  margin-top: 67px;
+
   fill: var(--shapes-01, #FFF);
   stroke-width: 1px;
   stroke: var(--text-body-2, #AFB2B1);
   filter: drop-shadow(0px 2px 7px rgba(0, 0, 0, 0.25));
 
 }
-#formMudarSenha{
+
+#formMudarSenha {
   margin: 54px 33px 0px 60px;
   height: 319px;
 }
-h2{
-  font: 24px/34px 'Archivo', sans-serif; 
+
+h2 {
+  font: 24px/34px 'Archivo', sans-serif;
   font-weight: 600;
 }
-hr{
+
+hr {
   margin: 16px 0px 24px 0px;
   height: 1px;
   background: #E6E6F0;
 }
-.content{
+
+.content {
   height: 100%;
 }
+
 .group-input {
   font: 14px/24px 'Poppins', sans-serif;
   color: var(--text-body);
   margin-bottom: 33px;
 }
+
 .input {
   width: 288px;
   height: 56px;
@@ -67,14 +74,17 @@ hr{
   padding: 10px;
   display: block;
 }
-label{
+
+label {
   font-weight: 400;
 }
+
 a {
   color: var(--text-body);
   font: 14px/24px 'Poppins', sans-serif;
   font-weight: 400;
 }
+
 #enviar {
   background: #04d361;
   border-radius: 8px;
@@ -84,29 +94,30 @@ a {
   width: 128px;
   color: var(--background-itens);
   font: 16px/26px 'Archivo', sans-serif;
-  font-weight: 600; 
+  font-weight: 600;
 }
+
 .btnVoltar {
   position: fixed;
   top: 1.9007391763463568vh;
   left: 0.8333333333333334vw;
 }
+
 .group-input a {
   position: absolute;
   visibility: hidden;
 }
+
 .group-input-error {
-  font: 14px/24px 'Poppins', sans-serif;
-  color: #808080;
+  font: 10px/20px 'Poppins', sans-serif;
+  color: red;
 }
+
 .group-input-error input {
   border-color: red;
 }
-.group-input-error a {
-  color: red;
-  visibility: visible;
-}
-.footer{
+
+.footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -114,19 +125,22 @@ a {
   border-radius: 0px 0px 8px 8px;
   background: var(--shapes-02);
 }
-.footer-text{
+
+.footer-text {
   display: flex;
   align-items: center;
   gap: 16px;
   margin: 0px 210px 0px 53px;
 }
-.footer-text p{
+
+.footer-text p {
   width: 153px;
   font: 12px/20px 'Poppins', sans-serif;
   font-weight: 400;
   color: #A0A0B2;
   background-color: var(--shapes-02);
 }
-.button{
+
+.button {
   margin-right: 112px;
 }

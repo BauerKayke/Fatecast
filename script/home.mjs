@@ -1,6 +1,4 @@
-import { loadImage, getFirebaseImageNames } from '../data/data.js';
-
-
+import { loadImage, getFirebaseImageNames } from '../data/data.mjs';
 
 getFirebaseImageNames().then((fileNames) => {
   // Carregue as imagens para cada tipo de elemento
@@ -64,6 +62,25 @@ function goOut() {
     console.log('erro', error)
   })
 }
+const btnSideBar = document.querySelector('.btn-sideBar')
+const divSide = document.querySelector('.side')
+const imgSide = document.querySelector('.imgSide')
+btnSideBar.addEventListener('click', sideBar)
+function sideBar() {
+  if (!btnSideBar.classList.contains('openSide')) {
+    btnSideBar.classList.add('openSide')
+    divSide.classList.add('open')
+    imgSide.src = '../icon/Group 22 (1).svg'
+    return
+  }
+  else if (btnSideBar.classList.contains('openSide')) {
+    btnSideBar.classList.remove('openSide')
+    divSide.classList.remove('open')
+    imgSide.src = '../icon/Group 22.svg'
+    return
+  }
+}
+
 
 fav()
 
