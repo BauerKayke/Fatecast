@@ -344,3 +344,17 @@ div.open.side {
 .sideImage img {
   border-radius: 24px;
 }
+
+#audio::-webkit-media-controls {
+  background-color: #8257E5;
+}
+
+
+/* Estilize os controles de tempo decorrido e tempo restante */
+#audio::-webkit-media-controls-current-time-display,
+#audio::-webkit-media-controls-time-remaining-display {
+  color: #04d361;
+  font: 16px;
+  font-weight: 600;
+  /* Cor do tempo decorrido e tempo restante em navegadores Webkit */
+}
